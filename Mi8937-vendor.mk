@@ -7,12 +7,19 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/vendor/bin/wingtech_mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/wingtech_mm-qcamera-daemon \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/prada/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/prada/MTP_Bluetooth_cal.acdb \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/ulysse/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ulysse/MTP_Bluetooth_cal.acdb \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/prada/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/prada/MTP_General_cal.acdb \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/ulysse/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ulysse/MTP_General_cal.acdb \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/prada/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/prada/MTP_Global_cal.acdb \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/ulysse/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ulysse/MTP_Global_cal.acdb \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/prada/MTP_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/prada/MTP_Handset_cal.acdb \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/ulysse/MTP_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ulysse/MTP_Handset_cal.acdb \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/prada/MTP_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/prada/MTP_Hdmi_cal.acdb \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/ulysse/MTP_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ulysse/MTP_Hdmi_cal.acdb \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/prada/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/prada/MTP_Headset_cal.acdb \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/ulysse/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ulysse/MTP_Headset_cal.acdb \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/prada/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/prada/MTP_Speaker_cal.acdb \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/ulysse/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ulysse/MTP_Speaker_cal.acdb \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/land/QRD_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/land/QRD_Bluetooth_cal.acdb \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/acdbdata/land/QRD_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/land/QRD_General_cal.acdb \
@@ -53,6 +60,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/vendor/bin/land_gx_fpcmd:$(TARGET_COPY_OUT_VENDOR)/bin/land_gx_fpcmd \
     vendor/xiaomi/Mi8937/proprietary/vendor/bin/land_gx_fpd:$(TARGET_COPY_OUT_VENDOR)/bin/land_gx_fpd \
     vendor/xiaomi/Mi8937/proprietary/vendor/bin/land_mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/land_mm-qcamera-daemon \
+    vendor/xiaomi/Mi8937/proprietary/vendor/bin/prada_gx_fpd:$(TARGET_COPY_OUT_VENDOR)/bin/prada_gx_fpd \
+    vendor/xiaomi/Mi8937/proprietary/vendor/bin/prada_mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/prada_mm-qcamera-daemon \
     vendor/xiaomi/Mi8937/proprietary/vendor/bin/santoni_gx_fpcmd:$(TARGET_COPY_OUT_VENDOR)/bin/santoni_gx_fpcmd \
     vendor/xiaomi/Mi8937/proprietary/vendor/bin/santoni_gx_fpd:$(TARGET_COPY_OUT_VENDOR)/bin/santoni_gx_fpd \
     vendor/xiaomi/Mi8937/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
@@ -69,6 +78,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/Lamera/sunny_ov5670_f5670bq_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Lamera/sunny_ov5670_f5670bq_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/Lamera/sunny_s5k3l8_f3l8yam_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Lamera/sunny_s5k3l8_f3l8yam_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/Lamera/sunny_s5k3l8_f3l8yam_new_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Lamera/sunny_s5k3l8_f3l8yam_new_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/Pamera/msm8937_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Pamera/msm8937_camera.xml \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/Pamera/ov13853_ofilm_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Pamera/ov13853_ofilm_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/Pamera/ov13853_qt_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Pamera/ov13853_qt_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/Pamera/ov13853_sunny_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Pamera/ov13853_sunny_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/Pamera/ov5670_ofilm_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Pamera/ov5670_ofilm_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/Pamera/ov5670_qt_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Pamera/ov5670_qt_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/vendor/etc/Pamera/ov5670_sunny_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Pamera/ov5670_sunny_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/Uamera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Uamera/camera_config.xml \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/Uamera/csidtg_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Uamera/csidtg_camera.xml \
     vendor/xiaomi/Mi8937/proprietary/vendor/etc/Uamera/ov13855_f13855bd_qtech_d6_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Uamera/ov13855_f13855bd_qtech_d6_chromatix.xml \
@@ -424,6 +440,248 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib/libLpegehw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLpegehw.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib/libLptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLptizoom.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib/libLrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLrueportrait.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPbifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPbifocus.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPctuator_bu64244.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPctuator_bu64244.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPctuator_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPctuator_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPctuator_dw9763_sunny.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPctuator_dw9763_sunny.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPeemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPeemore.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromaflash.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_common.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_cpp_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_cpp_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_cpp_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_cpp_liveshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_cpp_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_cpp_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_cpp_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_default_preview_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_default_preview_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_default_video_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_default_video_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_hfr_120_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_hfr_120_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_hfr_60_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_hfr_60_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_hfr_90_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_hfr_90_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_postproc.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_zsl_preview_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_zsl_preview_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_ofilm_zsl_video_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_ofilm_zsl_video_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_common.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_cpp_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_cpp_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_cpp_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_cpp_liveshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_cpp_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_cpp_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_cpp_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_default_preview_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_default_preview_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_default_video_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_default_video_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_hfr_120_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_hfr_120_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_hfr_60_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_hfr_60_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_hfr_90_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_hfr_90_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_postproc.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_zsl_preview_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_zsl_preview_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_qt_zsl_video_bu64291gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_qt_zsl_video_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_common.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_cpp_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_cpp_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_cpp_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_cpp_liveshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_cpp_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_cpp_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_cpp_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_default_preview_dw9763.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_default_preview_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_default_video_dw9763.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_default_video_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_hfr_120_dw9763.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_hfr_120_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_hfr_60_dw9763.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_hfr_60_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_hfr_90_dw9763.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_hfr_90_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_postproc.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_zsl_preview_dw9763.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_zsl_preview_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov13853_sunny_zsl_video_dw9763.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov13853_sunny_zsl_video_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_a3_default_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_a3_default_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_a3_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_a3_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_a3_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_a3_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_a3_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_a3_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_common.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_cpp_ds_chromatix.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_cpp_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_cpp_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_cpp_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_cpp_liveshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_cpp_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_cpp_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_cpp_us_chromatix.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_cpp_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_cpp_video_full.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_default_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_postproc.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_video_full.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_zsl_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_ofilm_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_ofilm_zsl_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_a3_default_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_a3_default_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_a3_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_a3_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_a3_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_a3_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_a3_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_a3_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_common.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_cpp_ds_chromatix.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_cpp_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_cpp_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_cpp_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_cpp_liveshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_cpp_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_cpp_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_cpp_us_chromatix.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_cpp_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_cpp_video_full.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_default_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_postproc.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_video_full.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_zsl_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_qt_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_qt_zsl_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_a3_default_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_a3_default_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_a3_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_a3_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_a3_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_a3_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_a3_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_a3_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_common.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_cpp_ds_chromatix.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_cpp_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_cpp_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_cpp_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_cpp_liveshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_cpp_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_cpp_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_cpp_us_chromatix.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_cpp_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_cpp_video_full.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_default_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_postproc.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_video_full.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_zsl_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPhromatix_ov5670_sunny_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPhromatix_ov5670_sunny_zsl_video.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPis_lc898122.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPis_lc898122.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPlash_pmic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPlash_pmic.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPlvd_smore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPlvd_smore.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPlvd_sw_tnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPlvd_sw_tnr.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_c2d_module.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_cpp_module.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_dcrf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_dcrf.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_frame_algorithm.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_iface_modules.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_imglib_modules.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_is.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_is.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_isp_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_isp_modules.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_mct.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_pp_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_pp_buf_mgr.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_pproc_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_pproc_modules.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_q3a_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_q3a_core.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_sensor_modules.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_stats_algorithm.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera2_stats_modules.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_cac3_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_cac3_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_chromaflash_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_chromaflash_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_csidtg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_csidtg.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_dbg.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_dcrf_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_dcrf_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_dummyalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_dummyalgo.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_eebinparse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_eebinparse.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_eeprom_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_eeprom_util.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_eztune_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_eztune_module.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_faceproc.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_hdr_gb_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_imglib.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_abf40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_abf40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_bcc40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_bcc40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_be_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_be_stats44.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_bf_stats47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_bf_stats47.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_bg_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_bg_stats44.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_bhist_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_bhist_stats44.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_bpc40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_bpc40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_chroma_enhan40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_chroma_enhan40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_chroma_suppress40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_chroma_suppress40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_clamp_encoder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_clamp_encoder40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_clamp_video40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_clamp_video40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_clamp_viewfinder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_clamp_viewfinder40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_color_correct40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_color_correct40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_color_xform_encoder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_color_xform_encoder40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_color_xform_viewfinder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_color_xform_viewfinder40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_cs_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_cs_stats44.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_demosaic40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_demosaic40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_demux40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_demux40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_fovcrop_encoder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_fovcrop_encoder40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_fovcrop_viewfinder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_fovcrop_viewfinder40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_gamma40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_gamma40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_ihist_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_ihist_stats44.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_linearization40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_linearization40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_ltm44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_ltm44.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_luma_adaptation40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_luma_adaptation40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_mce40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_mce40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_mesh_rolloff40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_mesh_rolloff40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_rs_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_rs_stats44.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_scaler_encoder44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_scaler_encoder44.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_scaler_viewfinder44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_scaler_viewfinder44.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_sce40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_sce40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_sub_module.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_template.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_template.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_isp_wb40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_isp_wb40.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_llvd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_llvd.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_ofilm_ov13853_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_ofilm_ov13853_eeprom.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_optizoom_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_optizoom_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_ov13853_ofilm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_ov13853_ofilm.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_ov13853_qt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_ov13853_qt.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_ov13853_sunny.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_ov13853_sunny.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_ov5670_ofilm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_ov5670_ofilm.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_ov5670_qt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_ov5670_qt.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_ov5670_sunny.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_ov5670_sunny.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_pdaf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_pdaf.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_pdafcamif.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_pdafcamif.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_ppbase_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_ppbase_module.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_stillmore_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_stillmore_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_sunny_ov13853_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_sunny_ov13853_eeprom.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_sw_tnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_sw_tnr.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_thread_services.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_thread_services.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_tintless_algo.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_tintless_bg_pca_algo.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_trueportrait_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_trueportrait_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_tuning.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_tuning_lookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_tuning_lookup.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmcamera_ubifocus_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmcamera_ubifocus_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmjpeg.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmqjpeg_codec.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPmqjpegdma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPmqjpegdma.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPomx_jpegdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPomx_jpegdec.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPomx_jpegenc.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPomx_jpegenc_pipe.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPpegdhw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPpegdhw.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPpegdmahw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPpegdmahw.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPpegehw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPpegehw.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPptizoom.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib/libPrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPrueportrait.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib/libUbifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libUbifocus.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib/libUctuator_dw9714.so:$(TARGET_COPY_OUT_VENDOR)/lib/libUctuator_dw9714.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib/libUctuator_fp5510_f13855bd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libUctuator_fp5510_f13855bd.so \
@@ -1054,16 +1312,22 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib/rfsa/adsp/libdirac-capiv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdirac-capiv2.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/hw/fingerprint.land_fpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.land_fpc.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/hw/fingerprint.land_goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.land_goodix.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib64/hw/fingerprint.prada_fpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.prada_fpc.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib64/hw/fingerprint.prada_goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.prada_goodix.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/hw/fingerprint.santoni_fpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.santoni_fpc.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/hw/fingerprint.santoni_goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.santoni_goodix.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/hw/gatekeeper.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.msm8937.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/hw/gf_fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gf_fingerprint.default.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/hw/gxfingerprint.land.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gxfingerprint.land.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib64/hw/gxfingerprint.prada.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gxfingerprint.prada.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/hw/gxfingerprint.santoni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gxfingerprint.santoni.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/hw/keystore.msm8937.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.msm8937.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/libLp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLp_client.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/libLpnav.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLpnav.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/libLpservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLpservice.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib64/libPp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPp_client.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib64/libPpnav.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPpnav.so \
+    vendor/xiaomi/Mi8937/proprietary/vendor/lib64/libPpservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPpservice.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/libSp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSp_client.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/libSpservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSpservice.so \
     vendor/xiaomi/Mi8937/proprietary/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so \
