@@ -7,19 +7,27 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_ODM)/overlayfs/land/bin/mm-qcamera-daemon \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/bin/mm-qcamera-daemon \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/bin/mm-qcamera-daemon \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/bin/mm-qcamera-daemon \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/etc/camera/camera_config.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ugg/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/ugg/etc/camera/camera_config.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/etc/camera/csidtg_camera.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/etc/camera/csidtg_camera.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/etc/camera/msm8937_camera.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/land/etc/camera/msm8937_camera.xml \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/etc/camera/msm8937_camera.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/etc/camera/msm8937_camera.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/etc/camera/ofilm_s5k5e8_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/land/etc/camera/ofilm_s5k5e8_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/etc/camera/ov13853_ofilm_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/etc/camera/ov13853_ofilm_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/etc/camera/ov13853_q13853a_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/land/etc/camera/ov13853_q13853a_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/etc/camera/ov13853_qt_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/etc/camera/ov13853_qt_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/etc/camera/ov13853_sunny_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/etc/camera/ov13853_sunny_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/etc/camera/ov13855_f13855bd_qtech_d6_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/etc/camera/ov13855_f13855bd_qtech_d6_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/etc/camera/ov13855_f13855bd_qtech_d6s_chromatix_india.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/etc/camera/ov13855_f13855bd_qtech_d6s_chromatix_india.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/etc/camera/ov13855_sunny_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/etc/camera/ov13855_sunny_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/etc/camera/ov16885_ojf0541_d6_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/etc/camera/ov16885_ojf0541_d6_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/etc/camera/ov5670_f5670bq_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/land/etc/camera/ov5670_f5670bq_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/etc/camera/ov5670_ofilm_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/etc/camera/ov5670_ofilm_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/etc/camera/ov5670_qt_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/etc/camera/ov5670_qt_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/etc/camera/ov5670_sunny_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/etc/camera/ov5670_sunny_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/etc/camera/ov5675_ofilm_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/etc/camera/ov5675_ofilm_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/etc/camera/plus_ov5670_f5670bq_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/land/etc/camera/plus_ov5670_f5670bq_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/etc/camera/qtech_s5k3l8_f3l8yam_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/land/etc/camera/qtech_s5k3l8_f3l8yam_chromatix.xml \
@@ -39,16 +47,40 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/etc/camera/sunny_ov5670_f5670bq_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/land/etc/camera/sunny_ov5670_f5670bq_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/etc/camera/sunny_s5k3l8_f3l8yam_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/land/etc/camera/sunny_s5k3l8_f3l8yam_chromatix.xml \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/etc/camera/sunny_s5k3l8_f3l8yam_new_chromatix.xml:$(TARGET_COPY_OUT_ODM)/overlayfs/land/etc/camera/sunny_s5k3l8_f3l8yam_new_chromatix.xml \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libactuator_bu64244.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libactuator_bu64244.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libactuator_bu64244gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libactuator_bu64244gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libactuator_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libactuator_bu64291gwz.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libactuator_dw9714.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libactuator_dw9714.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libactuator_dw9718s.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libactuator_dw9718s.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libactuator_dw9763.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libactuator_dw9763.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/lib/libactuator_dw9763.so:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/lib/libactuator_dw9763.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libactuator_dw9763_ov13853.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libactuator_dw9763_ov13853.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/lib/libactuator_dw9763_ov13855.so:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/lib/libactuator_dw9763_ov13855.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libactuator_dw9763_sunny.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libactuator_dw9763_sunny.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libactuator_fp5510_f13855bd.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libactuator_fp5510_f13855bd.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libchromaflash.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libchromaflash.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromaflash.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromaflash.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libchromaflash.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libchromaflash.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_common.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_common.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_liveshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_liveshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_cpp_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_default_preview_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_default_preview_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_default_video_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_default_video_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_hfr_120_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_hfr_120_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_hfr_60_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_hfr_60_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_hfr_90_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_hfr_90_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_postproc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_postproc.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_zsl_preview_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_zsl_preview_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_ofilm_zsl_video_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_ofilm_zsl_video_bu64291gwz.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libchromatix_ov13853_q13853a_common.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libchromatix_ov13853_q13853a_common.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libchromatix_ov13853_q13853a_cpp_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libchromatix_ov13853_q13853a_cpp_hfr_120.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libchromatix_ov13853_q13853a_cpp_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libchromatix_ov13853_q13853a_cpp_hfr_60.so \
@@ -69,6 +101,46 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libchromatix_ov13853_q13853a_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libchromatix_ov13853_q13853a_snapshot.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libchromatix_ov13853_q13853a_zsl_preview_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libchromatix_ov13853_q13853a_zsl_preview_bu64291gwz.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libchromatix_ov13853_q13853a_zsl_video_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libchromatix_ov13853_q13853a_zsl_video_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_common.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_common.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_liveshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_liveshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_cpp_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_default_preview_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_default_preview_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_default_video_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_default_video_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_hfr_120_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_hfr_120_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_hfr_60_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_hfr_60_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_hfr_90_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_hfr_90_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_postproc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_postproc.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_zsl_preview_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_zsl_preview_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_qt_zsl_video_bu64291gwz.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_qt_zsl_video_bu64291gwz.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_common.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_common.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_liveshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_cpp_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_default_preview_dw9763.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_default_preview_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_default_video_dw9763.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_default_video_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_hfr_120_dw9763.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_hfr_120_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_hfr_60_dw9763.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_hfr_60_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_hfr_90_dw9763.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_hfr_90_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_postproc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_postproc.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_zsl_preview_dw9763.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_zsl_preview_dw9763.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov13853_sunny_zsl_video_dw9763.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov13853_sunny_zsl_video_dw9763.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libchromatix_ov13855_f13855bd_qtech_d6_common.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libchromatix_ov13855_f13855bd_qtech_d6_common.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libchromatix_ov13855_f13855bd_qtech_d6_cpp_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libchromatix_ov13855_f13855bd_qtech_d6_cpp_hfr_120.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libchromatix_ov13855_f13855bd_qtech_d6_cpp_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libchromatix_ov13855_f13855bd_qtech_d6_cpp_hfr_60.so \
@@ -213,6 +285,84 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libchromatix_ov5670_f5670bq_video_full.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libchromatix_ov5670_f5670bq_video_full.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libchromatix_ov5670_f5670bq_zsl_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libchromatix_ov5670_f5670bq_zsl_preview.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libchromatix_ov5670_f5670bq_zsl_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libchromatix_ov5670_f5670bq_zsl_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_a3_default_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_a3_default_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_a3_default_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_a3_default_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_a3_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_a3_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_a3_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_a3_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_a3_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_a3_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_common.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_common.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_ds_chromatix.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_liveshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_liveshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_us_chromatix.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_us_chromatix.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_video_full.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_cpp_video_full.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_default_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_default_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_postproc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_postproc.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_video_full.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_video_full.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_zsl_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_zsl_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_ofilm_zsl_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_ofilm_zsl_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_a3_default_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_a3_default_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_a3_default_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_a3_default_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_a3_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_a3_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_a3_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_a3_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_a3_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_a3_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_common.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_common.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_ds_chromatix.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_liveshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_liveshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_us_chromatix.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_us_chromatix.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_video_full.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_cpp_video_full.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_default_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_default_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_postproc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_postproc.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_video_full.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_video_full.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_zsl_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_zsl_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_qt_zsl_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_qt_zsl_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_a3_default_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_a3_default_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_a3_default_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_a3_default_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_a3_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_a3_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_a3_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_a3_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_a3_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_a3_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_common.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_common.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_ds_chromatix.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_liveshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_us_chromatix.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_us_chromatix.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_video_full.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_cpp_video_full.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_default_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_default_video.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_hfr_120.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_hfr_60.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_hfr_90.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_hfr_90.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_postproc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_postproc.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_snapshot.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_snapshot.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_video_full.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_video_full.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_zsl_preview.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_zsl_preview.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libchromatix_ov5670_sunny_zsl_video.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libchromatix_ov5670_sunny_zsl_video.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/lib/libchromatix_ov5675_ofilm_common.so:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/lib/libchromatix_ov5675_ofilm_common.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/lib/libchromatix_ov5675_ofilm_cpp_hfr_120.so:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/lib/libchromatix_ov5675_ofilm_cpp_hfr_120.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/lib/libchromatix_ov5675_ofilm_cpp_hfr_60.so:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/lib/libchromatix_ov5675_ofilm_cpp_hfr_60.so \
@@ -557,218 +707,291 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libflash_gpio.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libflash_gpio.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libflash_gpio.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libflash_gpio.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libflash_pmic.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libflash_pmic.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libflash_pmic.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libflash_pmic.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libflash_pmic.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libflash_pmic.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libflash_pmic.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libflash_pmic.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libjpegdhw.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libjpegdhw.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libjpegdhw.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libjpegdhw.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libjpegdhw.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libjpegdhw.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libjpegdhw.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libjpegdhw.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libjpegdmahw.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libjpegdmahw.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libjpegdmahw.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libjpegdmahw.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libjpegdmahw.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libjpegdmahw.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libjpegdmahw.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libjpegdmahw.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libjpegehw.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libjpegehw.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libjpegehw.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libjpegehw.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libjpegehw.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libjpegehw.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libjpegehw.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libjpegehw.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libllvd_smore.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libllvd_smore.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libllvd_smore.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libllvd_smore.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libllvd_smore.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libllvd_smore.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libllvd_sw_tnr.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libllvd_sw_tnr.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_c2d_module.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_c2d_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_c2d_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_c2d_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_cpp_module.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_cpp_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_cpp_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_cpp_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_dcrf.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_dcrf.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_dcrf.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_dcrf.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_dcrf.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_dcrf.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_dcrf.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_dcrf.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_frame_algorithm.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_frame_algorithm.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_frame_algorithm.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_frame_algorithm.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_iface_modules.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_iface_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_iface_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_iface_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_imglib_modules.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_imglib_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_imglib_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_imglib_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_is.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_is.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_is.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_is.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_is.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_is.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_is.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_is.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_isp_modules.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_isp_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_isp_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_isp_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_mct.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_mct.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_mct.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_mct.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_mct_shimlayer.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_mct_shimlayer.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_mct_shimlayer.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_mct_shimlayer.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_pp_buf_mgr.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_pp_buf_mgr.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_pp_buf_mgr.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_pp_buf_mgr.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_pp_buf_mgr.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_pp_buf_mgr.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_pp_buf_mgr.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_pp_buf_mgr.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_pproc_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_pproc_modules.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_pproc_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_pproc_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_pproc_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_pproc_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_pproc_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_pproc_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_q3a_core.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_q3a_core.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_q3a_core.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_q3a_core.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_sensor_modules.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_sensor_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_sensor_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_sensor_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_stats_algorithm.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_stats_algorithm.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_stats_algorithm.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_stats_algorithm.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_stats_modules.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera2_stats_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera2_stats_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera2_stats_modules.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_vpe_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_vpe_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera2_wnr_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera2_wnr_module.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_cac3_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_cac3_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_cac3_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_cac3_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_cac3_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_cac3_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_chromaflash_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_chromaflash_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_chromaflash_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_chromaflash_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_chromaflash_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_chromaflash_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_chromaflash_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_chromaflash_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_csidtg.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_csidtg.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_csidtg.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_csidtg.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_csidtg.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_csidtg.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_csidtg.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_csidtg.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_dbg.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_dbg.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_dbg.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_dbg.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_dbg.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_dbg.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_dbg.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_dbg.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_dcrf_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_dcrf_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_dcrf_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_dcrf_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_dcrf_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_dcrf_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_dcrf_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_dcrf_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_dummyalgo.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_dummyalgo.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_dummyalgo.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_dummyalgo.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_dummyalgo.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_dummyalgo.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_dummyalgo.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_dummyalgo.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_eebinparse.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_eebinparse.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_eebinparse.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_eebinparse.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_eebinparse.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_eebinparse.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_eebinparse.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_eebinparse.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_eeprom_util.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_eeprom_util.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_eeprom_util.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_eeprom_util.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_eeprom_util.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_eeprom_util.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_eeprom_util.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_eeprom_util.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_eztune_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_eztune_module.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_eztune_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_eztune_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_eztune_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_eztune_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_eztune_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_eztune_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_facedetection_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_facedetection_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_facedetection_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_facedetection_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_faceproc.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_faceproc.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_faceproc.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_faceproc.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_faceproc2.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_faceproc2.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_hdr_gb_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_hdr_gb_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_hdr_gb_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_hdr_gb_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_imglib.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_imglib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_imglib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_imglib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_imglib_faceproc_adspstub.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_imglib_faceproc_adspstub.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_abf40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_abf40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_abf40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_abf40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_abf40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_abf40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_abf40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_abf40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_bcc40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_bcc40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_bcc40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_bcc40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_bcc40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_bcc40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_bcc40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_bcc40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_be_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_be_stats44.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_be_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_be_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_be_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_be_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_be_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_be_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_bf_stats47.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_bf_stats47.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_bf_stats47.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_bf_stats47.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_bf_stats47.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_bf_stats47.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_bf_stats47.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_bf_stats47.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_bg_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_bg_stats44.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_bg_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_bg_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_bg_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_bg_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_bg_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_bg_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_bhist_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_bhist_stats44.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_bhist_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_bhist_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_bhist_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_bhist_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_bhist_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_bhist_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_bpc40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_bpc40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_bpc40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_bpc40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_bpc40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_bpc40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_bpc40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_bpc40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_chroma_enhan40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_chroma_enhan40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_chroma_enhan40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_chroma_enhan40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_chroma_enhan40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_chroma_enhan40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_chroma_enhan40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_chroma_enhan40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_chroma_suppress40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_chroma_suppress40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_chroma_suppress40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_chroma_suppress40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_chroma_suppress40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_chroma_suppress40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_chroma_suppress40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_chroma_suppress40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_clamp_encoder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_clamp_encoder40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_clamp_encoder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_clamp_encoder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_clamp_encoder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_clamp_encoder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_clamp_encoder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_clamp_encoder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_clamp_video40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_clamp_video40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_clamp_video40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_clamp_video40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_clamp_video40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_clamp_video40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_clamp_video40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_clamp_video40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_clamp_viewfinder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_clamp_viewfinder40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_clamp_viewfinder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_clamp_viewfinder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_clamp_viewfinder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_clamp_viewfinder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_clamp_viewfinder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_clamp_viewfinder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_color_correct40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_color_correct40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_color_correct40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_color_correct40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_color_correct40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_color_correct40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_color_correct40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_color_correct40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_color_xform_encoder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_color_xform_encoder40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_color_xform_encoder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_color_xform_encoder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_color_xform_encoder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_color_xform_encoder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_color_xform_encoder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_color_xform_encoder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_color_xform_viewfinder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_color_xform_viewfinder40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_color_xform_viewfinder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_color_xform_viewfinder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_color_xform_viewfinder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_color_xform_viewfinder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_color_xform_viewfinder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_color_xform_viewfinder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_cs_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_cs_stats44.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_cs_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_cs_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_cs_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_cs_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_cs_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_cs_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_demosaic40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_demosaic40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_demosaic40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_demosaic40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_demosaic40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_demosaic40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_demosaic40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_demosaic40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_demux40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_demux40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_demux40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_demux40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_demux40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_demux40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_demux40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_demux40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_fovcrop_encoder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_fovcrop_encoder40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_fovcrop_encoder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_fovcrop_encoder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_fovcrop_encoder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_fovcrop_encoder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_fovcrop_encoder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_fovcrop_encoder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_fovcrop_viewfinder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_fovcrop_viewfinder40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_fovcrop_viewfinder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_fovcrop_viewfinder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_fovcrop_viewfinder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_fovcrop_viewfinder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_fovcrop_viewfinder40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_fovcrop_viewfinder40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_gamma40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_gamma40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_gamma40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_gamma40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_gamma40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_gamma40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_gamma40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_gamma40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_ihist_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_ihist_stats44.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_ihist_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_ihist_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_ihist_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_ihist_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_ihist_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_ihist_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_linearization40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_linearization40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_linearization40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_linearization40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_linearization40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_linearization40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_linearization40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_linearization40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_ltm44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_ltm44.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_ltm44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_ltm44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_ltm44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_ltm44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_ltm44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_ltm44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_luma_adaptation40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_luma_adaptation40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_luma_adaptation40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_luma_adaptation40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_luma_adaptation40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_luma_adaptation40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_luma_adaptation40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_luma_adaptation40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_mce40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_mce40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_mce40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_mce40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_mce40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_mce40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_mce40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_mce40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_mesh_rolloff40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_mesh_rolloff40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_mesh_rolloff40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_mesh_rolloff40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_mesh_rolloff40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_mesh_rolloff40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_mesh_rolloff40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_mesh_rolloff40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_rs_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_rs_stats44.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_rs_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_rs_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_rs_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_rs_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_rs_stats44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_rs_stats44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_scaler_encoder44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_scaler_encoder44.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_scaler_encoder44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_scaler_encoder44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_scaler_encoder44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_scaler_encoder44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_scaler_encoder44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_scaler_encoder44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_scaler_viewfinder44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_scaler_viewfinder44.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_scaler_viewfinder44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_scaler_viewfinder44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_scaler_viewfinder44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_scaler_viewfinder44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_scaler_viewfinder44.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_scaler_viewfinder44.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_sce40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_sce40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_sce40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_sce40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_sce40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_sce40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_sce40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_sce40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_sub_module.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_sub_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_sub_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_sub_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_template.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_template.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_template.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_template.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_template.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_template.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_template.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_template.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_isp_wb40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_isp_wb40.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_isp_wb40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_isp_wb40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_isp_wb40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_isp_wb40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_wb40.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_isp_wb40.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_llvd.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_llvd.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_llvd.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_llvd.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_llvd.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_llvd.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_llvd.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_llvd.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_ofilm_ov13853_eeprom.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_ofilm_ov13853_eeprom.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_optizoom_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_optizoom_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_optizoom_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_optizoom_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_optizoom_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_optizoom_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_optizoom_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_optizoom_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_ov13853_eeprom.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_ov13853_eeprom.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_ov13853_ofilm.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_ov13853_ofilm.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_ov13853_q13853a.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_ov13853_q13853a.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_ov13853_qt.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_ov13853_qt.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_ov13853_sunny.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_ov13853_sunny.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_ov13855_f13855bd_d6.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_ov13855_f13855bd_d6.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_ov13855_f13855bd_qtech_eeprom.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_ov13855_f13855bd_qtech_eeprom.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/lib/libmmcamera_ov13855_sunny.so:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/lib/libmmcamera_ov13855_sunny.so \
@@ -777,17 +1000,23 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ugg/lib/libmmcamera_ov16885_ojf0541_ofilm_d6s_eeprom.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ugg/lib/libmmcamera_ov16885_ojf0541_ofilm_d6s_eeprom.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_ov5670.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_ov5670.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_ov5670_eeprom.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_ov5670_eeprom.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_ov5670_ofilm.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_ov5670_ofilm.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_ov5670_qt.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_ov5670_qt.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_ov5670_sunny.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_ov5670_sunny.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/lib/libmmcamera_ov5675_ofilm.so:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/lib/libmmcamera_ov5675_ofilm.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/lib/libmmcamera_ov5675_ofilm_eeprom.so:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/lib/libmmcamera_ov5675_ofilm_eeprom.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_paaf_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_paaf_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_paaf_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_paaf_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_pdaf.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_pdaf.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_pdaf.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_pdaf.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_pdafcamif.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_pdafcamif.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_pdafcamif.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_pdafcamif.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_pdafcamif.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_pdafcamif.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_pdafcamif.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_pdafcamif.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_ppbase_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_ppbase_module.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_ppbase_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_ppbase_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_ppbase_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_ppbase_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_ppbase_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_ppbase_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_ppeiscore.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_ppeiscore.so \
@@ -807,39 +1036,52 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/lib/libmmcamera_s5k5e8_sunny.so:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/lib/libmmcamera_s5k5e8_sunny.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/santoni/lib/libmmcamera_s5k5e8_sunny_eeprom.so:$(TARGET_COPY_OUT_ODM)/overlayfs/santoni/lib/libmmcamera_s5k5e8_sunny_eeprom.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_stillmore_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_stillmore_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_stillmore_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_stillmore_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_stillmore_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_stillmore_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_stillmore_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_stillmore_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_sunny_ov13853_eeprom.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_sunny_ov13853_eeprom.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_sw2d_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_sw2d_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_sw2d_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_sw2d_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_sw_tnr.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_sw_tnr.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_thread_services.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_thread_services.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_thread_services.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_thread_services.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_thread_services.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_thread_services.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_thread_services.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_thread_services.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_tintless_algo.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_tintless_algo.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_tintless_algo.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_tintless_algo.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_trueportrait_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_trueportrait_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_trueportrait_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_trueportrait_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_trueportrait_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_trueportrait_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_trueportrait_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_trueportrait_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_tuning.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_tuning.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_tuning.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_tuning.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_tuning_lookup.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_tuning_lookup.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_tuning_lookup.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_tuning_lookup.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_tuning_lookup.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_tuning_lookup.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_tuning_lookup.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_tuning_lookup.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_ubifocus_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_ubifocus_lib.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmcamera_ubifocus_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmcamera_ubifocus_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmcamera_ubifocus_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmcamera_ubifocus_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmcamera_ubifocus_lib.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmcamera_ubifocus_lib.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmcamera_vpu_module.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmcamera_vpu_module.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmjpeg.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmjpeg.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmjpeg.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmjpeg.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmjpeg.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmjpeg.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmjpeg.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmjpeg.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmqjpeg_codec.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmqjpeg_codec.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmqjpeg_codec.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmqjpeg_codec.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libmmqjpegdma.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libmmqjpegdma.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmqjpegdma.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libmmqjpegdma.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmsw_detail_enhancement.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmsw_detail_enhancement.so \
@@ -848,27 +1090,35 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmmsw_platform.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmmsw_platform.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libmpbase.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libmpbase.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libois_lc898122.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libois_lc898122.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libois_lc898122.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libois_lc898122.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libois_lc898122.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libois_lc898122.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libois_lc898122.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libois_lc898122.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/liboptizoom.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/liboptizoom.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/liboptizoom.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/liboptizoom.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/liboptizoom.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/liboptizoom.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libqomx_jpegdec.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libqomx_jpegdec.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libqomx_jpegdec.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libqomx_jpegdec.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libqomx_jpegdec.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libqomx_jpegdec.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libqomx_jpegdec.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libqomx_jpegdec.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libqomx_jpegenc.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libqomx_jpegenc.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libqomx_jpegenc.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libqomx_jpegenc.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libqomx_jpegenc_pipe.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libqomx_jpegenc_pipe.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libqomx_jpegenc_pipe.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libqomx_jpegenc_pipe.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libremosaic_daemon.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libremosaic_daemon.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libseemore.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libseemore.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libseemore.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libseemore.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libseemore.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libseemore.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/wt8937-n-camera/lib/libseemore.so:$(TARGET_COPY_OUT_ODM)/overlayfs/wt8937-n-camera/lib/libseemore.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libtrueportrait.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libtrueportrait.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libtrueportrait.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libtrueportrait.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libtrueportrait.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libtrueportrait.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/lib/libubifocus.so:$(TARGET_COPY_OUT_ODM)/overlayfs/land/lib/libubifocus.so \
+    vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/prada/lib/libubifocus.so:$(TARGET_COPY_OUT_ODM)/overlayfs/prada/lib/libubifocus.so \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/ulysse/lib/libubifocus.so:$(TARGET_COPY_OUT_ODM)/overlayfs/ulysse/lib/libubifocus.so
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi8937/proprietary/odm/overlayfs/land/bin/gx_fpcmd:$(TARGET_COPY_OUT_ODM)/overlayfs/land/bin/gx_fpcmd \
